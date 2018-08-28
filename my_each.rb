@@ -1,3 +1,15 @@
-def my_each # put argument(s) here
+# clothes = ["dress", "jeans", "sweater", "socks"]
+  tas = ['arel', 'jon', 'logan', 'spencer']
+
+
+def my_each(array) # put argument(s) here
   # code here
+  i = 0
+  while i < array.length 
+  	yield(array[i])
+  	i += 1
+  end
+  array
 end
+
+my_each(tas) { |i| print i }
